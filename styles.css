@@ -1,0 +1,65 @@
+body {
+  height                  : 10000px;
+  margin                  : 0px;
+  padding                 : 0px;
+  /* above two can be overwritten if necessary */
+  /* color                : white; */
+  background-image        : url("assets/bg2.jpg");
+  background-attachment   : fixed;
+  /* Keeps the bg image in place even after scrolling */
+  background-size         : 100%
+    /* resizes the bg image to fit the screen */
+}
+
+.navbar {
+  overflow        : hidden;
+  /* important for navbar visibility  */
+  background-color: rgb(8 9 21);
+  ;
+
+  position: fixed;
+  top     : 0;
+  /* Position the navbar at the top of the page */
+  width   : 100%;
+  /* Full width */
+  display : inline-block;
+}
+
+.navbar a {
+  float          : left;
+  /* important */
+  color          : #f2f2f2;
+  text-align     : center;
+  padding        : 14px 16px;
+  text-decoration: none;
+  font-size      : 17px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color           : black;
+}
+
+.navbar a.active {
+  background-color: #339691;
+  color           : white;
+}
+
+.navbar img {
+  margin-top : 5px;
+  margin-left: 20%;
+  filter     : invert(100%);
+}
+
+.navbar p {
+  /* position   : absolute;
+  top        : 0px;
+  bottom     : 5px; */
+  margin-left: 52%;
+  color      : red;
+}
+
+.container {
+  margin-top: 6%;
+  /* Add a top margin to avoid content overlay */
+}
