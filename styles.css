@@ -34,7 +34,7 @@ body {
 
 .navigation {
   position        : fixed;
-  background-color: #0d1d30;
+  background-color: #051527e3;
   padding         : 4px 8px;
   top             : 0;
   width           : 100%;
@@ -64,6 +64,7 @@ header::after {
 .navigation nav a:hover {
   background-color: #16989f;
   border-radius   : 15px;
+  transition      : ease-in-out 0.15s;
 }
 
 .navigation nav a.active {
@@ -72,7 +73,85 @@ header::after {
 }
 
 /*  <------x------------------x-------- CSS for navbar over -----x----------------x----->  */
+
+.form-container {
+  border          : 2px solid black;
+  max-width       : 50%;
+  padding         : 10px 15px;
+  margin          : 10px;
+  background-color: #000000a8;
+  border-radius   : 24px;
+  color           : white;
+}
+
+.form-container form {
+  color: white;
+}
+
+.form-heading {
+  color           : white;
+  padding         : 10px;
+  background-color: #000000a8;
+  border          : 2px solid black;
+  border-radius   : 15px;
+  text-align      : center;
+  width           : 50%;
+  margin          : 10px;
+  display         : inline-block;
+}
+
+.form-container .form-group input {
+  display      : block;
+  width        : 60%;
+  margin       : 15px auto;
+  padding      : 10px;
+  font-size    : 15px;
+  text-align   : center;
+  border       : 2px solid black;
+  border-radius: 5px;
+}
+
+.form-container .form-group button {
+  display         : block;
+  width           : 60%;
+  margin          : 20px auto;
+  padding         : 10px 20px;
+  border          : none;
+  border-radius   : 5px;
+  color           : white;
+  background-color: #175db9;
+  text-align      : center;
+  text-decoration : none;
+  font-size       : 15px;
+}
+
+.form-heading,
+.form-container {
+  display: block;
+  width  : 50%;
+  margin : 10px auto;
+}
+
+.form-container .form-group button:hover {
+  color           : white;
+  background-color: #124b96;
+}
+
+.description {
+  color           : white;
+  padding         : 10px;
+  background-color: #000000a8;
+  border          : 2px solid black;
+  border-radius   : 15px;
+  text-align      : center;
+  width           : 100%;
+  margin          : 10px auto;
+  display         : inline-block;
+}
+
 .container {
-  margin-top: 6%;
+  width  : 90%;
+  margin : 10% auto;
   /* Add a top margin to avoid content overlay */
+  padding: 15px;
 }
